@@ -1,0 +1,32 @@
+
+<p-messages [(value)]="msgs"></p-messages>
+
+<h3 class="first">Basic</h3>
+<div>
+  <ce-button type="button" (click)="showSuccess()" label="Success" class="ui-button-success"></ce-button>
+  <ce-button type="button" (click)="showInfo()" label="Info" class="ui-button-info"></ce-button>
+  <ce-button type="button" (click)="showWarn()" label="Warn" class="ui-button-warning"></ce-button>
+  <ce-button type="button" (click)="showError()" label="Error" class="ui-button-danger"></ce-button>
+  <ce-button type="button" (click)="showMultiple()" label="Multiple"></ce-button>
+  <ce-button type="button" (click)="clear()" icon="pi pi-times" style="float:right" label="Clear"></ce-button>
+</div>
+
+<h3>Message Service</h3>
+<ce-button> type="button" (click)="showViaService()" label="Use Service"></ce-button>
+
+<h3>Inline Message CSS</h3>
+<p>p-message component is used to display inline messages mostly within forms.</p>
+<ce-message severity="info" text="PrimeNG Rocks"></ce-message>
+<ce-message severity="success" text="Record Saved"></ce-message>  
+<ce-message severity="warn" text="Are you sure?"></ce-message>  
+<ce-message severity="error" text="Field is required"></ce-message>
+
+<div style="margin-top:30px">
+  <input type="text" pInputText placeholder="Username" class="ng-dirty ng-invalid">
+  <ce-message severity="error" text="Field is required"></ce-message>
+</div>
+
+<div style="margin-top:30px">
+  <input type="text" pInputText placeholder="Email" class="ng-dirty ng-invalid">
+  <ce-message severity="error"></ce-message>
+</div>
