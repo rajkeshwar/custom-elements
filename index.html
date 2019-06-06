@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+  <% if(htmlWebpackPlugin.options.isProd){ %>
+  <base href="/custom-elements/"> 
+  <% } else { %>
+  <base href="/"> 
+  <% } %>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="assets/nova-light/theme.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <style>
+   body {
+    font-family: 'Roboto', sans-serif;
+   }
+  </style>
+</head>
+
+<body>
+  <div class="ui-demo">
+    <div class="sidenav">
+      <ul class="ui-elements">
+        <li class="ui-elements__item"><a href="accordion">Accordion</a></li>
+        <li class="ui-elements__item"><a href="tabs">Tabs</a></li>
+        <li class="ui-elements__item"><a href="toggle">Toggle</a></li>
+        <li class="ui-elements__item"><a href="tooltip">Tooltip</a></li>
+        <li class="ui-elements__item"><a href="checkbox">Checkbox</a></li>
+        <li class="ui-elements__item"><a href="radiogroup">Radiogroup</a></li>
+        <li class="ui-elements__item"><a href="button">Button</a></li>
+        <li class="ui-elements__item"><a href="tree">Tree View</a></li>
+        <li class="ui-elements__item"><a href="slider">Image Slider</a></li>
+        <li class="ui-elements__item"><a href="switch">Input Switch</a></li>
+        <li class="ui-elements__item"><a href="message">Message</a></li>
+        <li class="ui-elements__item"><a href="ce-checkbox">Ce Checkbox</a></li>
+        <li class="ui-elements__item"><a href="chips">Chips</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <ui-router></ui-router>
+    </div>
+  </div>
+
+  
+</body>
+
+
+</html>

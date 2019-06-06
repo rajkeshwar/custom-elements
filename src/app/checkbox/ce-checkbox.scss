@@ -1,0 +1,22 @@
+:host {
+  display: inline-block;
+  background: url('assets/checkbox/unchecked-checkbox.svg') no-repeat;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+}
+:host([hidden]) {
+  display: none;
+}
+:host([checked]) {
+  background: url('assets/checkbox/checked-checkbox.svg') no-repeat;
+  background-size: contain;
+}
+:host([disabled]) {
+  background: url('assets/checkbox/unchecked-checkbox-disabled.svg') no-repeat;
+  background-size: contain;
+}
+:host([checked][disabled]) {
+  background: url('assets/checkbox/checked-checkbox-disabled.svg') no-repeat;
+  background-size: contain;
+}

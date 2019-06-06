@@ -1,0 +1,146 @@
+
+
+@import '~primeicons/primeicons.css';
+@import '~font-awesome/css/font-awesome.min.css';
+
+@import './slider/slider.scss';
+@import './common/common.scss';
+@import './button/button.scss';
+
+ce-checkbox {
+  vertical-align: middle;
+}
+
+ce-label {
+  vertical-align: middle;
+  display: inline-block;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-left: 8px;
+}
+
+ce-accordion-heading {
+  background-color: white;
+  border: 1px solid black;
+}
+
+ce-accordion-heading+ce-accordion-heading {
+  border-top: none;
+}
+
+ce-accordion-heading[expanded] {
+  background-color: bisque;
+}
+
+ce-accordion-panel {
+  padding: 20px;
+  background-color: lightgray;
+}
+
+ce-tab {
+  border: 1px solid black;
+  padding: 20px;
+}
+
+ce-tab-panel {
+  padding: 20px;
+  background-color: lightgray;
+}
+
+ce-tab[selected] {
+  background-color: bisque;
+}
+
+ce-tabs:not(:defined),
+ce-tab:not(:defined),
+ce-tab-panel:not(:defined) {
+  display: block;
+}
+
+ce-toggle-button {
+  background-color: #eee;  
+  padding: 3px;
+  cursor: default;
+  user-select: none;
+  border: 1px solid #333;
+  border-radius: 3px;
+  transition: background-color .2s ease;
+}
+ce-toggle-button[pressed],
+ce-toggle-button:not([disabled]):active {
+  background-color: #999;
+}
+ce-toggle-button[disabled] {
+  opacity: 0.35;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+
+  * {
+    box-sizing: border-box;
+  }
+}
+.ui-demo {
+  display: flex;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+
+  .sidenav {
+    flex-basis: 300px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
+  }
+
+  .content {
+    flex: 1;
+    border-left: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+}
+
+ui-router {
+  display: block;
+  width: 100%;
+}
+
+.ui-elements {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  background: #fafafa;
+
+  &__item {
+    border-bottom: 1px solid #ccc;
+    transition: box-shadow .3s linear;
+    position: relative;
+    box-sizing: border-box;
+
+    a {
+      padding: 10px 20px;
+      display: inline-block;
+      width: 100%;
+    }
+
+    &:hover {
+      box-shadow: 0px 1px 8px rgba(0,0,0,0.3);
+      border-bottom: 1px solid #fff ;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 5px;
+        background: rgb(47, 98, 163);
+      }
+    }
+  }
+}
