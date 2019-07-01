@@ -8,8 +8,8 @@ npm run build
 git branch -D gh-pages
 git checkout -f --orphan gh-pages
 rm .gitignore
-git add site/*
-git mv site/* .
+git add dist/*
+git mv dist/* .
 git clean -f
 git commit -am 'Website'
 git checkout $CURRENT_BRANCH
