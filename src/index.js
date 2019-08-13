@@ -2,7 +2,7 @@
  * @Author: Rajkeshwar Prasad(rajkeshwar.pd@gmail.com) 
  * @Date: 2019-02-23 22:24:32 
  * @Last Modified by: Rajkeshwar Prasad
- * @Last Modified time: 2019-03-31 16:38:42
+ * @Last Modified time: 2019-08-13 22:11:40
  */
 
 require('./app/styles.scss');
@@ -11,7 +11,6 @@ require('./app/ce-checkbox/checkbox.scss');
 require('./app/chips/chips.scss');
 require('./app/switch/switch.scss');
 require('./app/message/message.scss');
-require('./assets/es-slider');
 
 require('./app/ce-element');
 
@@ -55,6 +54,7 @@ require('./app/ce-checkbox/checkbox');
 require('./app/chips/chips');
 require('./app/switch/switch');
 require('./app/message/message');
+require('./app/doc-tree/doc-tree');
 
 
 
